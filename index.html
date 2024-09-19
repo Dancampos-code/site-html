@@ -5,30 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A Viagem do Sonhos</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
+        <nav>
+            <ul>
+                <li><a href="#" title="Pacotes">Pacotes</a></li>
+                <li><a href="#" title="Taxas">Taxas</a></li>
+                <li><a href="#" title="Contato">Contato</a></li>
+            </ul>
+        </nav>
         <h1>Venha realizar a viagem dos seus sonhos!</h1>
     </header>
-    <nav>
-        <ul>
-            <li>Pacotes</li>
-            <li>Taxas</li>
-            <li>Contato</li>
-        </ul>
-    </nav>
     <section>
         <h2>Conheça nossos pacotes</h2>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc molestie felis enim, id bibendum nibh laoreet
-            id. Suspendisse vitae ipsum a nisi porttitor eleifend. Vestibulum sit amet mauris sem. Quisque eget bibendum
-            metus, ut dictum sapien. In tempor, lorem a interdum volutpat, ante turpis hendrerit nisl, quis aliquet orci
-            odio suscipit felis. Morbi ut hendrerit elit, non congue elit. Aliquam justo justo, lobortis et pulvinar
-            eget, suscipit sed nunc. Nullam porttitor vitae tortor eget volupat.
-            <a href="https://www.lipsum.com/feed/html">Link</a>
+            Descubra destinos de tirar o fôlego com nossos pacotes de viagens personalizados! Quer você esteja em busca de uma escapada relaxante em uma praia paradisíaca, uma aventura cheia de adrenalina nas montanhas, ou um tour cultural pelas cidades mais icônicas do mundo, nós temos o pacote perfeito para você.
+<br>
+<strong>Por que Viajar Conosco?</strong><br>
+Pacotes Exclusivos: Roteiros cuidadosamente planejados para garantir que você aproveite cada momento.
+Preços Imbatíveis: Oferecemos as melhores tarifas do mercado sem abrir mão da qualidade.
+Flexibilidade: Personalize sua viagem como quiser! Desde a duração até os serviços inclusos.
+Atendimento Especializado: Nossa equipe de especialistas está sempre pronta para garantir que sua viagem seja inesquecível.
+            <a href="https://www.lipsum.com/feed/html" title="Ir para o site lipsum">Link</a>
             <hr>
         </p>
+
         <figure>
             <img src="/Imagens Turismos/gramado.jpg" alt="Chalé em Gramado">
             <figcaption>Gramado</figcaption>
@@ -42,10 +46,9 @@
             </figure>
         </figure>
     </section>
-    <video controls width="500px" source
-        src="/Videos/www-y2mate.blog - ACREDITEM NO TACO DE VOCÊS - Vídeo MOTIVACIONAL ( Motivação ) HD.mp4"
-        type="vídeo/mp4">
-        Seu navegador não suporta esse formato de vídeo! <a href="https://www-y2mate.blog/pt/">Clique parabaixar
+    <video controls width="500px" source src="/Videos/Vídeo para agência de viagens.mp4" type="vídeo/mp4">
+        Seu navegador não suporta esse formato de vídeo! <a href="https://www.youtube.com/watch?v=LYBFsOh-7uc">Clique
+            parabaixar
             aqui</a>
     </video>
     <section>
@@ -95,35 +98,56 @@
         <h2>Orçamento</h2><br>
         <form method="Get" action="">
             <fieldset>
-            <legend> Dados da Viagem</legend>    
-            <label>Nome</label><br>
-            <input type="text" name="nome"><br><br>
-            <label>Email</label><br>
-            <input type="email" name="email"><br><br>
-            <label>Data de ida</label><br>
-            <input type="date" name="dataIda"><br><br>
-            <label>Data de volta</label><br>
-            <input type="date" name="dataVolta"><br><br>
-            <label>Quantidade de pessoas</label><br>
-            <input type="number" name="quantidadePessoas"><br><br>
-        </fieldset><br>
-        
+                <legend> Dados da Viagem</legend>
+                <label>Nome</label><br>
+                <input type="text" name="nome"><br><br>
+                <label>Email</label><br>
+                <input type="email" name="email"><br><br>
+                <label>Data de ida</label><br>
+                <input type="date" name="dataIda"><br><br>
+                <label>Data de volta</label><br>
+                <input type="date" name="dataVolta"><br><br>
+                <label>Quantidade de pessoas</label><br>
+                <input type="number" name="quantidadePessoas"><br><br>
+            </fieldset><br>
+
             <fieldset>
                 <legend>Quais serviços deseja contratar? </legend>
                 <label>
-                <input type="checkbox" name="passagem" value="Passagens">Compra de Passagens <br>
+                    <input type="checkbox" name="passagem" value="Passagens">Compra de Passagens <br>
                 </label>
                 <label>
-                <input type="checkbox" name="hotel" value="Hotel">Reserva de Hospedagem <br>
+                    <input type="checkbox" name="hotel" value="Hotel">Reserva de Hospedagem <br>
                 </label>
                 <label>
-                <input type="checkbox" name="veículos" value="Veículos">Aluguel de Veículos <br><br>
+                    <input type="checkbox" name="veículos" value="Veículos">Aluguel de Veículos <br><br>
                 </label>
             </fieldset> <br>
-            
+            <fieldset>
+                <legend>Escolha a forma de pagamento</legend>
+                <label>
+                    <br><input type="radio" name="formadePagamneto" value="Cartão de Crédito"> Cartão de crédito
+                </label>
+                <label>
+                    <br><input type="radio" name="formadePagamneto" value="Cartão de débito"> Cartão de débito. </label>
+                <label>
+                    <br><input type="radio" name="formadePagamneto" value="Pix"> Pix
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Escolha o prazo para pagamento</legend>
+                <select name="prazoPagamento">
+                    <option value="aVista">Á vista</option>
+                    <option value="cincoParcelas">5x sem juros</option>
+                    <option value="dezParcelas" selected>10x com juros</option>
+                </select>
+            </fieldset>
+
             <label>Comentário</label><br>
             <textarea rows="5" name="comentario"></textarea><br><br>
-            <button>Salvar</button>
+
+            <input type="submit" value="Enviar">
         </form>
 
     </section>
